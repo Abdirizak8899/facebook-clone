@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>facebook clone</title>
+    <!-- style css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+<!-- header section start -->
+
+
+    <header>
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div class="logoBox">
+                    <img src="images/facebook-logo.png" alt="logo">
+                </div>
+                <div class="searchBox">
+                    <input type="search" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="iconBox1">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-user-group"></i>
+                    <i class="fa-solid fa-video"></i>
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <div class="iconBox2">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <i class="fa-solid fa-bell"></i>
+                    <label><img src="/images/user.jpeg" alt="user"></label>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<!-- header section end -->
+<!-- home section start -->
+
+
+<div class="home">
+    <div class="container">
+        <div class="home-weapper">
+
+            <!-- home left start here -->
+            <div class="home-left">
+
+                <div class="profile" >  
+                    <span style="border-radius: 50%; "><img src="images/user.jpeg" alt="user" style="position: relative;left: 5px;width: 40px;border-radius: 10px;"></span>
+                    <h3>Eng updirahman</h3>
+                </div>
+               
+                <div class="pages">
+                    <h4 class="mini-headign">Pages</h4>
+                    <label>
+                        <img src="images/messenger.png" alt="messenger">
+                        <span>messenger</span>
+                    </label>
+                    <label>
+                        <img src="images/instagram.png" alt="instagram">
+                        <span>instagram</span>
+                    </label>
+                    <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+                </div>
+
+                <div class="group">
+                    <h4 class="mini-headign">Group</h4>
+                    <label>
+                        <img src="images/gg.png" alt="group01">
+                        <span>Graphic design</span>
+                    </label>
+                    
+                    <label>
+                        <img src="images/gg2.png" alt="group02">
+                        <span>website design</span>
+                    </label>
+
+                    <label>
+                        <img src="data:image/jpeg;base64,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" alt="group03">
+                        <span>Somali Programmers</span>
+                    </label>
+
+                    <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+                </div>
+
+                <div class="games">
+                    <h4 class="mini-headign">Games</h4>
+                    <label>
+                        <img src="images/game.png" alt="game01">
+                        <span>Facebook games</span>
+                    </label>
+                    <label>
+                        <img src="images/game2.png" alt="game02">
+                        <span>Free Play Games</span>
+                    </label>
+                    <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+                </div>
+
+                <div class="explore">
+                    <h4 class="mini-headign">Explore</h4>
+                   
+                    <a href="#"><i class="fa-solid fa-user-group"></i> Group</a>
+                    <a href="#"><i class="fa-solid fa-star"></i></i> Favorites</a>
+                    <a href="#"><i class="fa-solid fa-bookmark"></i></i> Saves</a>
+                    <a href="#"><i class="fa-solid fa-clock"></i> Events</a>
+                    <a href="#"><i class="fa-solid fa-flag"></i> Pages</a>
+
+                    <div><label class="darkTheme"> <span></span></label> Apply Dark Theme</div>
+
+                    <button class="see-more-btn">See more <i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                
+            </div><!-- home left end here -->
+
+            <!-- home center start here -->
+
+            <div class="home-center">
+                <div class="home-center-wrapper">
+                    <div class="stories">
+                        <h3 class="mini-headign">Stories</h3>
+                        <div class="stories-wrapper">
+
+                            <div class="single-stories">
+                                <label><img src="images/user.jpeg" alt="user"></label>
+                                <div style="display: flex; flex-direction: column;">
+                                    <img src="images/user.jpeg" alt="user">
+                                    <i class="fa-solid fa-circle-plus" style="position: relative; top: -75px; background-color: #0053ff;width: 40px;border-radius: 30%;padding: 1px;align-items: center;justify-content: center;"></i>
+                                    <b style="color:#0053ff;background-color: #ccdcff;border-radius: 5px;">Create Stories</b>
+                                </div>
+                            </div>
+
+                            <div class="single-stories">
+                                <label><img src="images/us.png" alt="sp"></label>
+                                <div>
+                                    <img src="images/ss.jpg" alt="ss">
+                                    <b>Mohamed jeyte</b>
+                                </div>
+                            </div>
+
+                            <div class="single-stories">
+                                <label><img src="images/us2.png" alt="sp2"></label>
+                                <div>
+                                    <img src="images/ss2.jpg" alt="ss2">
+                                    <b>C/salaam salaad</b>
+                                </div>
+                            </div>
+
+                            <div class="single-stories">
+                                <label><img src="images/us3.png" alt="sp3"></label>
+                                <div>
+                                    <img src="images/ss3.jpg" alt="ss3">
+                                    <b>Farhan mohamed</b>
+                                </div>
+                            </div>
+
+                            <div class="single-stories">
+                                <label><img src="images/us4.png" alt="sp4"></label>
+                                <div>
+                                    <img src="images/ss4.jpg" alt="ss4">
+                                    <b>Aisha omar</b>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="createPost">
+
+                        <h3 class="mini-headign">Create Post</h3>
+                        <div class="post-text">
+                            <img src="images/user.jpeg" alt="user" style="border-radius: 30%;">
+                            <input type="text-area" placeholder="What's on your mind, updirahman ?">
+                        </div>
+
+                        <div class="post-icon">
+                            <a href="#" style="background: #ffebed;">
+                            <i style="background: #ff4154;" class="fa-solid fa-camera"></i>
+                            Gallery</a>
+
+                            <a href="#" style="background: #ccdcff;">
+                            <i style="background: #0053ff;" class="fa-solid fa-video"></i>
+                            Video</a>
+
+                            <a href="#" style="background: #d7ffef;">
+                            <i style="background: #00d181;" class="fa-solid fa-location-dot"></i>
+                            Location</a>
+
+                            <a href="#" style="background: #cff3ff;">
+                            <i style="background: #04c3ff;" class="fa-solid fa-gift"></i>
+                            Gift</a>
+                            
+                            <a href="#" style="background: #fff4d1;">
+                            <i style="background: #ffca28;" class="fa-solid fa-face-grin-beam"></i>
+                            Feeling / Acrivity</a>
+
+                        </div>
+
+                    </div>
+
+                   
+                    <div class="fb-post1">
+                        <div class="fb-post1-container">
+                            <div class="fb-post1-header">
+                                <ul>
+                                    <li class="active">popular</li>
+                                    <li>recent</li>
+                                    <li>most view</li>
+                                </ul>
+                            </div>
+                            <div class="fb-p1-main">
+                                <div class="post-title" >
+                                    <img src="/images/me.jpg" alt="user picture" style="border-radius: 30%;">
+                                    <ul>
+                                        <li style="display:flex;align-items:center;"><h3>Abdirizak abdalla <img src="data:image/png;base64,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" alt="verified page" style="width:20px;height:20px; position: relative;top:24px;left: 5px;"> <span> . 2 hours ago</span></h3></li>
+                                        <li><span>02 january at 12:55 PM</span></li>
+                                    </ul>
+                                    <p>
+                                        In nature, nothing is perfect and everything is perfect. Trees can be contorted, bent in weird ways, and they're still beautiful <a href="https://www.facebook.com/profile.php?id=100079169779779" target="_blank">| Follow our page</a>
+                                    </p>
+                                </div>
+
+                                <div class="post-images">
+                                    <div class="post-images1">
+                                        <img src="images/pp.jpg" alt="post images 01">
+                                        <img src="images/pp2.jpg" alt="post images 02">
+                                        <img src="images/pp3.jpg" alt="post images 03">
+                                    </div>
+                                    <div class="post-images2">
+                                        <img src="images/pp4.jpg" alt="post images 04">
+                                    </div>
+                                </div>
+
+                                <div class="like-comment">
+                                    <ul style="display:flex; align-items: center; justify-content: space-between;">
+                                        <li >
+                                            <img src="images/love.png" alt="love" style="position: relative;top:5px">
+                                            <img src="images/like.png" alt="like"style="position: relative;top:5px">
+                                            <span>22M likes</span>
+                                        </li>
+                                        <li style="display: flex;align-items: center;"><i class="fa-regular fa-comment-dots"></i> <span>555 comments</span></li>
+                                        <li style="display: flex;align-items: center;"><i class="fa-solid fa-share-from-square"></i> <span>254 share</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- home center wrapper end -->
+            </div> <!-- home center end -->
+
+            <div class="home-right">
+                <div class="home-right-wrapper">
+
+                    <div class="event-friend">
+                        <div class="event">
+                            <h3 class="heading">Upcoming Events <span>see all</span></h3>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtgCAni9RHw3mHKZzkzvhnT7MJA6JIp0Il3A&usqp=CAU" alt="event-img">
+                            <div class="event-date">
+                                <h3>5 <b>Feb</b></h3>
+                                <h4>Mogadishu satadium <span><i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i>Mogadishu</span></h4>
+                            </div>
+                            <button><i class="fa-regular fa-star"></i> interested</button>
+                        </div>
+
+                        <hr>
+                    
+                        <div class="friend">
+                            <h3 class="heading">Friend Requests <span>see all</span></h3>
+                            <ul>
+                                <li><img src="/images/duraan.jpg" alt="user"></li>
+                                <li>
+                                    <b>Duraan ali</b>
+                                    <p>Passion over money! </p>
+                                    <button>confirm</button><button class="friend-remove">remove</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="create-page">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-circle-plus"></i>
+                                <h4>Create Page & Groups</h4>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </li>
+                            <li>
+                                <img src="https://somaliprogrammers.com/wp-content/uploads/2021/04/94-1024x768.jpg" alt="groups">
+                            </li>
+                            <li>
+                                <b>Somali Programmers <span>200k Members</span></b>
+                                <button>Join Group</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="messenger">
+                        <div class="messenger-search">
+                            <i class="fa-solid fa-user-group"></i>
+                            <h4>Messenger</h4>
+                            <input type="search" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="/images/me.jpg" alt="user">
+                                <b>Abdirizak abdalla <span>Online</span></b>
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </li>
+
+                            <li>
+                                <img src="/images/duraan.jpg" alt="user">
+                                <b>Duraan ali <span>Offline</span></b>
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </li>
+
+                            <li>
+                                <img src="/images/abdiwakil.jpg" alt="user">
+                                <b>Abdiwakiil ali <span>Online</span></b>
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div><!-- home right wrapper end -->
+            </div><!-- home right end -->
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- home section end -->
+
+<script>
+    var darkButton = document.querySelector(".darkTheme");
+
+    darkButton.onclick = function(){
+        darkButton.classList.toggle("button-Active");
+        document.body.classList.toggle("dark-color")
+    }
+
+</script>
+
+</body>
+</html>
